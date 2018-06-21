@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Conduit</title>
     <script src="../dist/elm-widget.js"></script>
     <script src="../dist/widget.js"></script>
 </head>
@@ -23,6 +22,10 @@
     }
 
     node = document.getElementById('widgetArea');
+
+    // In reality, you would combine the main elm object "Elm"
+    // in the widget library, and not require the user to pass it in.
+    // This is just a rough example, and didn't wanna bother with gulp/webpack etc.
     initWidget(Elm, node, myCustomCallBack);
 </script>
 
