@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Conduit</title>
+    <script src="../dist/elm-widget.js"></script>
+    <script src="../dist/widget.js"></script>
+</head>
+
+<body id="page-body">
+    <div>
+        <div>
+            <p>Outside of the elm app here</p>
+        </div>
+        <div id="widgetArea"></div>
+    </div>
+</body>
+
+<script>
+    function myCustomCallBack(someString) {
+        console.log(someString)
+    }
+
+    node = document.getElementById('widgetArea');
+    initWidget(Elm, node, myCustomCallBack);
+</script>
+
+</html>
